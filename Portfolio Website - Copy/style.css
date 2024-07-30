@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 12%;
+    background-color: rgb(43, 43, 43);
+}
+.logo{
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+    transition: 0.2s ease;
+}
+span{
+    color:rgb(200,0,255);
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin: 0 20px;
+    border-bottom: 3px;
+    transition: 0.2s ease;
+}
+nav a:hover{
+    color: rgb(200,0,255);
+    border-bottom: 3px solid rgb(200,0,255);
+}
+.home{
+    width: 100%;
+    min-height: 90vh;
+    background-color: black;
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-box{
+    max-width: 200px;
+}
+.home-box h3{
+    font-size: 40px;
+}
+.home-box h1{
+    font-size: 30px;
+    line-height: 1.2;
+}
+.home-box p{
+    font-size: 20px;
+    margin: 25px 0 30px;
+}
+.button-box button{
+    padding: 10px 20px;
+    background-color: rgb(35, 35, 35);
+    color: rgb(200, 0, 255);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+.button-box button:hover{
+    color: white;
+    background-color: rgb(200, 0, 255);
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    gap: 7em;
+    display: flex;
+}
+.about h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 3.2;
+    padding-bottom: 30px;
+}
+.about-me p{
+    font-size: 35px;
+    margin: 10px 0 30px 80px; 
+}
+.about-me .icons{
+    letter-spacing: 20px;
+    font-size: 70px;
+    margin-left: 80px;
+}
+.fa-html5{
+    color: rgb(241, 64, 64);
+}
+.fa-html5:hover{
+    color: rgb(200, 0, 255);
+    transition: 0.4s ease;
+}
+.fa-css3-alt{
+    color: rgb(79, 79, 249);
+}
+.fa-css3-alt:hover{
+    color: rgb(200, 0, 255);
+    transition: 0.4s ease;
+}
+.fa-js{
+    color: rgb(74, 253, 74);
+}
+.fa-js:hover{
+    color: rgb(200, 0, 255);
+    transition: 0.4s ease;
+}
+.fa-python:hover{
+    color: rgb(200, 0, 255);
+    transition: 0.4s ease;
+}
+.fa-c{
+    color: rgb(129, 128, 128);
+}
+.fa-c:hover{
+    color: rgb(200, 0, 255);
+    transition: 0.4s ease;
+}
+
+.image-box img{
+    border-radius: 10%;
+    box-shadow: 0px 0px 30px rgb(200, 0, 255);
+}
+.image img {
+    position:absolute;
+    right: 100px;
+    top: 60px;
+    width: 45%;
+    height: 60%;
+    padding: 1rem;
+    margin-top: 160px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px rgb(120, 76, 120);
+    margin-right: 0px;
+}
+.skill{
+    min-height: 100vh;
+    background-color: black;
+    padding: 28px 20px;
+}
+.skill h2{
+    font-size: 290%;
+    color: blanchedalmond;
+}
+.skills{
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    padding: 25px;
+}
+.skill-name{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin: 20px 190px;
+}
+.skill-bar{
+    height: 14px;
+    background: rgb(39, 38, 38);
+    border-radius: 3px;
+    width: 40%;
+    margin: 20px 190px;
+}
+.skill-per{
+    height: 14px;
+    background: rgb(200, 0, 255);
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: white;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0px;
+    transform: translateX(50%);
+}
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+@keyframes fillBars{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+.project{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+.project h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+}
+.my-project{
+    display: flex;
+    gap: 2.5rem;
+    padding: 55px 119px;
+}
+.first{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.my-project h3{
+    margin: 10px 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.first p{
+    margin: 10px 15px;
+    text-align: justify;
+    font-weight: bold;
+}
+.first img{
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.second{
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+}
+.second img{
+    margin-top: 10px;
+}
+.second p{
+    margin: 10px 15px;
+    text-align: justify;
+    font-weight: bolder;
+}
+.third p{
+    margin: 10px 15px;
+    text-align: justify;
+    font-weight: bolder;
+}
+.third{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.third img{
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.resume{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+.myresume{
+    text-align: center;
+}
+.myresume h2{
+    font-size: 50px;
+    font-weight: 900;
+    padding: 7rem;
+}
+.myresume a button{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: rgb(35, 35, 35);
+    color: rgb(200, 0, 255);
+}
+.myresume a button:hover{
+    color: white;
+    background-color: rgb(200, 0, 255);
+}
+.contact{
+    background-color: black;
+    height: 100vh;
+}
+.contact h2{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+.contact form{
+    width: 50em;
+    margin: 0.5em auto;
+    text-align: center;
+   margin-bottom: 1em;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact form .input input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+    resize: none;
+    text-align: left;
+}
+.buttons{
+    padding: 10px 20px;
+    background-color: rgb(35, 35, 35);
+    color: rgb(200, 0, 255);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+.buttons:hover{
+    color: white;
+    background-color: rgb(200, 0, 255);
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding:  40px 0;
+    background-color: black;
+    color: white;
+}
+.footer .icons{
+    letter-spacing: 8px;
+    justify-content: center;
+    text-align: center;
+}
+.fa-square-twitter{
+    font-size: 30px;
+}
+.fa-square-twitter:hover{
+    color: rgb(200, 0, 255);
+    transition: 0.4s ease;
+}
+.fa-instagram{
+    font-size: 30px;
+}
+.fa-instagram:hover{
+    color: rgb(200, 0, 255);
+    transition: 0.4s ease;
+}
+.fa-linkedin{
+    font-size: 30px;
+}
+.fa-linkedin:hover{
+    color: rgb(200, 0, 255);
+    transition: 0.4s ease;
+}
+.fa-github{
+    font-size: 30px;
+}
+.fa-github:hover{
+    color: rgb(200, 0, 255);
+    transition: 0.4s ease;
+}
+.footer .copyright{
+    margin-top: 42px;
+    margin-bottom: 34px;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+}
